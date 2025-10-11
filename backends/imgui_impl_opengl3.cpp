@@ -115,7 +115,6 @@
 //  ES 2.0    100       "#version 100"      = WebGL 1.0
 //  ES 3.0    300       "#version 300 es"   = WebGL 2.0
 //----------------------------------------
-
 #if defined(_MSC_VER) && !defined(_CRT_SECURE_NO_WARNINGS)
 #define _CRT_SECURE_NO_WARNINGS
 #endif
@@ -123,6 +122,11 @@
 #include "imgui.h"
 #ifndef IMGUI_DISABLE
 #include "imgui_impl_opengl3.h"
+
+// ADD THESE INCLUDES FOR THIS TO WORK
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
 #include <stdio.h>
 #include <stdint.h>     // intptr_t
 #if defined(__APPLE__)
