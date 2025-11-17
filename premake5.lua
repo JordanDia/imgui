@@ -4,8 +4,8 @@ project "ImGui"
     cppdialect "C++23"
     staticruntime "On"
 
-    targetdir ("Binaries/" .. outputdir .. "/%{prj.name}")
-    objdir ("Binaries-Int/" .. outputdir .. "/%{prj.name}")
+    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
     files {
         "imconfig.h",
@@ -18,6 +18,7 @@ project "ImGui"
         "imstb_textedit.h",
         "imstb_truetype.h",
         "imgui_demo.cpp",
+        "imgui_tables.cpp",
         "backends/imgui_impl_glfw.cpp",
         "backends/imgui_impl_opengl3.cpp",
         "backends/imgui_impl_opengl3_loader.h"
@@ -26,7 +27,8 @@ project "ImGui"
     includedirs {
         ".",
         "backends",
-        "%{wks.location}/Jah/External/GLFW/include"
+        "%{wks.location}/Client/External/GLFW/include",
+        "%{wks.location}/Client/External/Glad/include",
     }
 
     links {
