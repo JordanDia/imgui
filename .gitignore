@@ -5,6 +5,14 @@
 imgui.ini
 imgui*.ini
 
+# binaries
+binaries
+Binaries-int
+
+# vs proj
+*.vcxproj
+*.vcxproj.filters
+
 ## General build artifacts
 *.o
 *.obj
