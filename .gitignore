@@ -6,7 +6,7 @@ imgui.ini
 imgui*.ini
 
 # binaries
-binaries
+Binaries
 Binaries-int
 
 # vs proj
